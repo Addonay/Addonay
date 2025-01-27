@@ -1,0 +1,152 @@
+{
+	"files.autoSave": "afterDelay",
+	"vsicons.dontShowNewVersionMessage": true,
+	// "C_Cpp.default.compilerPath": "C:\\msys64\\ucrt64\\bin\\g++.exe",
+	"C_Cpp.default.compilerPath": "C:\\msys64\\ucrt64\\bin\\g++.exe",
+	"cmake.configureOnOpen": false,
+	"explorer.confirmDelete": false,
+	"cmake.showOptionsMovedNotification": false,
+	"liveServer.settings.donotShowInfoMsg": true,
+	"explorer.confirmDragAndDrop": false,
+	"liveServer.settings.donotVerifyTags": true,
+	"editor.formatOnSave": true,
+	"editor.formatOnPaste": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll": "always",
+		"source.organizeImports": "always"
+	},
+	"files.associations": {
+		"*.css": "tailwindcss"
+	},
+	"editor.fontFamily": "'Victor Mono', monospace",
+	"editor.tokenColorCustomizations": {
+		"textMateRules": [
+			{
+				"scope": [
+					"comment",
+					"punctuation.definition.comment",
+					// "",
+					"keyword",
+					"storage.type",
+					"storage.modifier",
+					"keyword.control",
+					"constant.language"
+				],
+				"settings": {
+					"fontStyle": "italic"
+				}
+			}
+		]
+	},
+	// "editor.fontFamily": "Operator Mono",
+	"vscode_custom_css.imports": [
+		// "file:///home/addo2/vscode_operator_mono_lig/vscode_style.css",
+		"https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap"
+	],
+	"editor.showFoldingControls": "never",
+	"editor.cursorSmoothCaretAnimation": "on",
+	// "editor.smoothScrolling": true,
+	"editor.fontLigatures": true,
+	// "editor.fontFamily":  "gabriola regular",
+	// "editor.fontFamily": "yu gothic ui",
+	"terminal.integrated.fontLigatures": true,
+	"terminal.integrated.fontFamily": "Victor Mono",
+	"terminal.integrated.fontSize": 14,
+	// "terminal.integrated.fontFamily": "monospace, OperatorMonoLig-LightItalic",
+	// "editor.fontFamily": "Consolas, 'Courier New', monospace",
+	"emmet.includeLanguages": {
+		"javascript": "javascriptreact"
+	},
+	"editor.fontWeight": "normal",
+	"editor.minimap.enabled": false,
+	"editor.fontSize": 14,
+	"reactSnippets.settings.importReactOnTop": false,
+	"[dart]": {
+		"editor.formatOnSave": true,
+		"editor.formatOnType": true,
+		"editor.rulers": [80],
+		"editor.selectionHighlight": false,
+		"editor.suggestSelection": "first",
+		"editor.tabCompletion": "onlySnippets",
+		"editor.wordBasedSuggestions": "off"
+	},
+	"[python]": {
+		"editor.defaultFormatter": "ms-python.black-formatter",
+		// "editor.defaultFormatter": "charliermarsh.ruff",
+		"editor.formatOnSave": true
+	},
+	"workbench.sideBar.location": "right",
+	"workbench.statusBar.visible": false,
+	"window.menuBarVisibility": "compact",
+	"git.enableSmartCommit": true,
+	"git.autofetch": true,
+	"prettier.jsxSingleQuote": true,
+	"codeium.enableCodeLens": false,
+	"explorer.confirmPasteNative": false,
+	"prisma.showPrismaDataPlatformNotification": false,
+	"workbench.editorAssociations": {
+		"*.so": "sqlite-viewer.option"
+	},
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"explorer.fileNesting.patterns": {
+		"pubspec.yaml": "pubspec.lock,pubspec_overrides.yaml,.packages,.flutter-plugins,.flutter-plugins-dependencies,.metadata",
+		"*.dart": "${capture}.g.dart",
+		"*.sqlite": "${capture}.${extname}-*",
+		"*.db": "${capture}.${extname}-*",
+		"*.sqlite3": "${capture}.${extname}-*",
+		"*.db3": "${capture}.${extname}-*",
+		"*.sdb": "${capture}.${extname}-*",
+		"*.s3db": "${capture}.${extname}-*"
+	},
+	"interactiveWindow.executeWithShiftEnter": true,
+	"python.createEnvironment.trigger": "off",
+	"[json]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"reactSnippets.settings.typescriptPropsStatePrefix": "interface",
+	"git.openRepositoryInParentFolders": "always",
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+		// "editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"prettier.semi": true,
+	"prettier.trailingComma": "es5",
+	"prettier.tabWidth": 4,
+	"prettier.singleQuote": false,
+	"prettier.useTabs": true,
+	// "prettier.enable": true,
+	"workbench.startupEditor": "none",
+	"path-intellisense.autoSlashAfterDirectory": true,
+	"path-intellisense.autoTriggerNextSuggestion": true,
+	"path-intellisense.ignoreTsConfigBaseUrl": true,
+	"[html]": {
+		"editor.defaultFormatter": "vscode.html-language-features"
+	},
+	"gitlens.views.commitDetails.files.layout": "tree",
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"redhat.telemetry.enabled": false,
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"workbench.iconTheme": "material-icon-theme",
+	"[java]": {
+		"editor.defaultFormatter": "Oracle.oracle-java"
+	},
+	"[dockercompose]": {
+		"editor.defaultFormatter": "ms-azuretools.vscode-docker"
+	},
+	"git.confirmSync": false,
+	"[css]": {
+		"editor.defaultFormatter": "vscode.css-language-features"
+	},
+	"[markdown]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"terminal.integrated.env.linux": {}
+}
