@@ -21,6 +21,6 @@ else
   echo "No changes to commit at $(date)" >> $LOG_FILE
 fi
 
-echo "Finished running auto_push_dotfiles.sh at $(date)" >> $LOG_FILE
+echo -e "Finished running auto_push_dotfiles.sh at $(date)\n" >> $LOG_FILE
 
 exit 0
