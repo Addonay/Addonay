@@ -53,7 +53,7 @@ bun add @tanstack/react-table
 bun add convex@latest @clerk/nextjs@latest @trivago/prettier-plugin-sort-imports@latest prettier-plugin-tailwindcss@latest framer-motion@latest svix@latest @vercel/analytics@latest
 
 # Initialize shadcn components
-bunx --bun shadcn@latest init -d 
+bunx --bun shadcn@latest init -d
 bunx --bun shadcn@latest add accordion alert alert-dialog aspect-ratio avatar badge breadcrumb button calendar card carousel chart checkbox collapsible command context-menu dialog drawer dropdown-menu form hover-card input input-otp label menubar navigation-menu pagination popover progress radio-group resizable scroll-area select separator sheet sidebar skeleton slider sonner switch table tabs textarea toast toggle toggle-group tooltip
 
 echo "Everything is set up. Now running dev server for the convex db"
@@ -407,7 +407,7 @@ EOF
 
 echo "Done"
 
-bunx --bun convex@latest dev 
+bunx --bun convex@latest dev
 
 
 cat << 'EOF' > convex
@@ -539,49 +539,3 @@ EOF
 
 
 echo "Done! Project created at: $(pwd)"
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	

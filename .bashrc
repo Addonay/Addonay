@@ -128,6 +128,7 @@ case ":$PATH:" in
 esac
 # pnpm end
 alias pn="pnpm"
+alias ptsh="poetry init --no-interaction && poetry shell"
 alias pt="poetry"
 alias cls="clear"
 alias py="python3"
@@ -137,12 +138,13 @@ export PATH="/etc/poetry/bin:$PATH"
 . "/home/addo2/.deno/env"
 source /home/addo2/.local/share/bash-completion/completions/deno.bash
 eval "$(uv generate-shell-completion bash)"
-alias uvsh="uv venv && source .venv/bin/activate"
+alias uvi="uv init && uv venv && source .venv/bin/activate"
+alias uvsh="source .venv/bin/activate"
 alias any='/home/addo2/AnythingLLMDesktop/start'
 alias pnn="pnpm create next app@latest"
 alias pnv="pn create vite@latest"
 alias pnd="pn i && pn dev"
-
+alias all="rm -rf .[!.]* *"
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
@@ -150,12 +152,58 @@ alias bunn="bun create next-app@latest --ts --app --src-dir --turbopack --use-bu
 alias bund="bun install && bun --bun run dev"
 alias bunv="bun create vite@latest"
 alias buns="bun run build && bun run start"
+alias buno="bun outdated"
+alias bunu="bun update"
+alias buna="bun add"
+alias bux="bunx --bun"
+alias bush="bunx --bun shadcn@latest"
+alias buncn="bunx --bun nuxi@latest init --packageManager bun --gitInit"
+alias bunma="bunx --bun nuxi@latest module add"
+
 
 alias olr="ollama run llama3.2:1b"
 export PATH="/home/addo2/.config/herd-lite/bin:$PATH"
 export PHP_INI_SCAN_DIR="/home/addo2/.config/herd-lite/bin:$PHP_INI_SCAN_DIR"
 
-PATH=~/.console-ninja/.bin:$PATH
-alias c='code -r'
 
+alias c='code -r'
+alias w='windsurf -r'
+
+alias space="find . -type d \( -name \".venv\" -o -name \".next\" -o -name \"node_modules\" \) -prune -exec du -sm {} \; 2>/dev/null | awk '
+BEGIN {
+    FS=\"\\t\";
+    venv_count=0; next_count=0; node_modules_count=0;
+    venv_size=0; next_size=0; node_modules_size=0;
+    total_count=0; total_size=0
+}
+{
+    size=\$1;
+    split(\$2, a, \"/\");
+    name=a[length(a)];
+    if(name==\".venv\") {
+        venv_count++;
+        venv_size+=size
+    } else if(name==\".next\") {
+        next_count++;
+        next_size+=size
+    } else if(name==\"node_modules\") {
+        node_modules_count++;
+        node_modules_size+=size
+    };
+    total_count++;
+    total_size+=size
+}
+function format_size(size) {
+    if (size > 1000) {
+        return sprintf(\"%.2fgb\", size / 1000.0)
+    } else {
+        return sprintf(\"%dmb\", size)
+    }
+}
+END {
+    printf \"%-20s space: %s\\n\", sprintf(\".venv: %d\", venv_count), format_size(venv_size);
+    printf \"%-20s space: %s\\n\", sprintf(\".next: %d\", next_count), format_size(next_size);
+    printf \"%-20s space: %s\\n\", sprintf(\"node_modules: %d\", node_modules_count), format_size(node_modules_size);
+    printf \"%-20s space: %s\\n\", sprintf(\"Total: %d\", total_count), format_size(total_size)
+}'"
 # Hello world comment from original file

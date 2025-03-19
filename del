@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Find directories to delete
+mapfile -t dirs < <(find . -type d \( -name ".venv" -o -name ".next" -o -name "node_modules" \) -prune)
+
+if [ ${#dirs[@]} -eq 0 ]; then
+    echo "No .venv, .next, or node_modules directories found."
+    exit 0
+fi
+
+echo "The following directories will be deleted:"
+for dir in "${dirs[@]}"; do
+    echo "$dir"
+done
+
+read -p "Are you sure you want to delete these directories? (y/N) " confirm
+if [ "$confirm" = "y" ] || [ "$confirm" = "Y" ]; then
+    for dir in "${dirs[@]}"; do
+        rm -rf "$dir"
+    done
+    echo "Directories deleted."
+else
+    echo "Deletion cancelled."
+fi
