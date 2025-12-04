@@ -187,3 +187,75 @@
     "workbench.statusBar.visible": false,
     "chat.agent.maxRequests": 40,
 }
+
+{
+    "window.commandCenter": true,
+    "files.autoSave": "afterDelay",
+    "window.titleBarStyle": "custom",
+    // "breadcrumbs.enabled": false,
+    "workbench.sideBar.location": "right",
+    "editor.fontFamily": "Victor Mono",
+    "editor.fontSize": 20,
+    "editor.fontWeight": "300",
+    "svelte.enable-ts-plugin": true,
+    "workbench.statusBar.visible": false,
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    "keyword",
+                    "keyword.control",
+                    "keyword.operator",
+                    "keyword.other",
+                    "storage.type",
+                    "storage.modifier"
+                ],
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            }
+        ]
+    },
+    "files.associations": {
+        "*.css": "tailwindcss"
+    },
+    "workbench.colorTheme": "Default Dark Modern",
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[svelte]": {
+        "editor.defaultFormatter": "svelte.svelte-vscode",
+        "editor.tabSize": 8,
+        "editor.insertSpaces": true
+    },
+    "[css]": {
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true
+    },
+    "[tailwindcss]": {
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true
+    },
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "always",
+        "source.removeUnusedImports": "always"
+    },
+    "editor.tabSize": 4,
+    "terminal.integrated.tabs.enabled": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "window.menuBarVisibility": "compact",
+    "workbench.activityBar.location": "hidden",
+    "workbench.secondarySideBar.defaultVisibility": "visible",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "biome.suggestInstallingGlobally": false,
+    "remote.SSH.remotePlatform": {
+        "ssh.lightning.ai": "linux"
+    },
+    "editor.stickyScroll.enabled": false,
+}
