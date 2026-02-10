@@ -1,0 +1,47 @@
+font-family = VictorMono NF Regular
+adjust-cell-height = 7
+adjust-cursor-height = 7
+adjust-box-thickness = -1
+
+adjust-underline-position = 40%
+adjust-underline-thickness = -60%
+
+cursor-style = bar
+cursor-style-blink = false
+
+shell-integration = fish
+shell-integration-features = no-cursor
+
+keybind = alt+s=new_split:right
+keybind = alt+down=new_split:down
+keybind = alt+up=new_split:up
+keybind = alt+d=close_surface
+keybind = ctrl+alt+space=toggle_split_zoom
+
+window-width = 100
+window-height = 26
+window-padding-x = 4
+
+confirm-close-surface = false
+clipboard-paste-protection = false
+unfocused-split-opacity = 1.0
+
+theme = Mathias
+background = #000000
+background-opacity = 0.9
+background-blur = true
+foreground = #f4f4ff
+cursor-color = #ff0078
+
+selection-background = 1d3c3b
+selection-foreground = eeeeee
+
+palette = 4=#3D52E2
+palette = 12=#344CFF
+
+
+# auto-inject the right integration for your shell
+shell-integration = "detect"
+working-directory = "inherit"
+window-inherit-working-directory = true
+
