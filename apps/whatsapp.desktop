@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Name=WhatsApp
+GenericName=Chat Client
+Comment=WhatsApp in Helium
+Exec=~/./Downloads/helium-0.6.9.1-x86_64.AppImage "https://web.whatsapp.com"
+Terminal=false
+Icon=/home/addo/Downloads/whatsapp.png
+Type=Application
+Categories=Network;InstantMessaging;
+# This helps the Window Manager find the window for rules
+StartupWMClass=helium

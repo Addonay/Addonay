@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.0
+Name=ChatGPT
+GenericName=AI Assistant
+Comment=ChatGPT in Zen
+# We use flatpak run to launch it. The --new-window ensures it doesn't open as a tab in your existing session.
+Exec=google-chrome-stable --app=https://chatgpt.com --class="chatgpt-app"
+Terminal=false
+# IMPORTANT: Replace YOUR_USERNAME below
+Icon=/home/addo/Downloads/chat.png
+Type=Application
+Categories=Network;ArtificialIntelligence;
+# This helps the window manager group it correctly
+StartupWMClass=zen-alpha

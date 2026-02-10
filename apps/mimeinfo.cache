@@ -1,0 +1,9 @@
+[MIME Cache]
+application/x-zerosize=dev.zed.Zed.desktop;
+text/html=helium.desktop;lmstudio.desktop;
+text/plain=dev.zed.Zed.desktop;
+x-scheme-handler/about=helium.desktop;lmstudio.desktop;
+x-scheme-handler/http=helium.desktop;lmstudio.desktop;
+x-scheme-handler/https=helium.desktop;lmstudio.desktop;
+x-scheme-handler/unknown=helium.desktop;lmstudio.desktop;
+x-scheme-handler/zed=dev.zed.Zed.desktop;

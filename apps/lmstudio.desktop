@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=LMStudio
+Exec=/home/addo/Downloads/squashfs-root/lm-studio
+Icon=/home/addo/Downloads/lmstudio-app-logo.webp
+Type=Application
+Categories=Network;Chat;
+Comment=Helium Web Browser
+StartupWMClass=LMStudio
+
+MimeType=x-scheme-handler/unknown;x-scheme-handler/about;x-scheme-handler/https;x-scheme-handler/http;text/html;

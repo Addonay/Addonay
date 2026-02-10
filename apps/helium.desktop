@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Helium
+Exec=/home/addo/Downloads/helium-0.8.2.1-x86_64.AppImage %u
+Icon=/home/addo/Downloads/helium-icon.png
+Type=Application
+Categories=Network;WebBrowser;
+Comment=Helium Web Browser
+StartupWMClass=Helium
+
+MimeType=x-scheme-handler/unknown;x-scheme-handler/about;x-scheme-handler/https;x-scheme-handler/http;text/html;
